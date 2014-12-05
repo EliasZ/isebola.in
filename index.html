@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+    <meta charset="UTF-8" />
+
+    <meta property="og:url" content="http://isebola.in/">
+    <meta property="og:title" content="Is Ebola In?" />
+    <meta property='og:description' content="Check whether Ebola is at your destination." />
+
+    <meta name="description" content="Is Ebola in? Check whether Ebola is at your destination.">
+    <title>Is ebola in?</title>
+
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+<div id="container" style="margin-top: 10%">
+    <form method="get" name="search" id="search">
+        <div class="headline-text uc">
+            Is Ebola In<br />
+            <input type="text" class="input-big" id="place" name="place" placeholder="some place" autofocus="autofocus">
+            ?
+        </div>
+        <br />
+        <span class="faded">
+            Type where you are and hit enter.
+            <label><input id="imperial" type="checkbox" value="0" /> I prefer the imperial system.</label>
+        </span>
+    </form>
+
+    <p class="uc big-text" id="result-text" style="display: none;">
+    </p>
+
+    <p class="rounded-box" id="result-data" style="display: none;">
+        Displaying results for <strong id="result-place"></strong>. Closest Ebola casualty is in <strong id="result-affected-location"></strong>, approximately <strong id="result-affected-distance"></strong> away.
+        Take all of this information with a grain of salt. This is no travel advise. Check with your local authorities for travel recommendations.
+    </p>
+</div>
+</body>
+</html>
