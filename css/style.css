@@ -9,6 +9,17 @@ body {
     margin: 0% auto 10% auto;
     width: 70%;
 }
+#footer {
+    text-align: right;
+    margin-top: 20%;
+}
+#footer-text {
+    padding-top: 5px;
+    border-top: 4px solid #ddd;
+}
+#footer a {
+    color: #555;
+}
 
 .input-big  {
     font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
