@@ -51,8 +51,12 @@ kb.ready(function() {
 
     kb.on(window, 'hashchange', function(e) {
         e.preventDefault();
-        placeInput.value = getHash();
 
+        if (placeInput.value == getHash()) {
+            return;
+        }
+
+        placeInput.value = getHash();
         search(placeInput.value);
     });
 
