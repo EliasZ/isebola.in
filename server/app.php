@@ -32,8 +32,8 @@ function r($data) {
 }
 
 // @-sign to mute e-warning if API is down/not accessible
-$apiData = @json_decode(file_get_contents('dummy.json'), true);
-//$apiData = json_decode(file_get_contents('https://maps.googleapis.com/maps/api/geocode/json?language=en&address=' . $_GET['address']), true);
+//$apiData = @json_decode(file_get_contents('dummy.json'), true);
+$apiData = @json_decode(file_get_contents('https://maps.googleapis.com/maps/api/geocode/json?language=en&address=' . urlencode($_GET['address'])), true);
 
 // Check if API responds as
 if ($apiData === null || ! isset($apiData['results']) || count($apiData['results']) < 1) {
