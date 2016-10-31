@@ -83,7 +83,6 @@ if (isset($_GET['imp']) && $_GET['imp'] == 'true') {
 
 // Build some fancy message
 $message = 'There is ';
-
 if (! $countryIsAffected) {
     $message .= 'no ';
 }
